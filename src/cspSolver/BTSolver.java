@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Queue;
 
 import sudoku.Converter;
 import sudoku.SudokuFile;
@@ -90,6 +91,7 @@ public class BTSolver implements Runnable{
 
 	public void printSolverStats()
 	{
+		System.out.println("HELLO");
 		System.out.println("Time taken:" + (endTime-startTime) + " ms");
 		System.out.println("Number of assignments: " + numAssignments);
 		System.out.println("Number of backtracks: " + numBacktracks);
@@ -191,18 +193,23 @@ public class BTSolver implements Runnable{
 	 */
 	private boolean arcConsistency()
 	{
+		//System.out.println("ACCCCCCCCCC");
 		Queue<Variable> varWithDomain1 = new LinkedList<Variable>();
 		for (Variable v: network.getVariables()){
 			if (v.getDomain().size() == 1){
+				System.out.println(v.getName() + " " + v.getAssignment());
 				varWithDomain1.add(v);
 			}
 		}
 		while(!varWithDomain1.isEmpty()){
 			Variable var = varWithDomain1.remove();
 			for (Variable varOther: network.getNeighborsOfVariable(var)){
-				varOther.removeValueFromDomain(var.getAssignment());
-				if(varOther.getDomain().size() == 1){
-					varWithDomain1.add(varOther);
+				if (varOther.getDomain().size() != 1){
+					//System.out.println("inside the loop");
+					varOther.removeValueFromDomain(var.getAssignment());
+					if(varOther.getDomain().size() == 1){
+						varWithDomain1.add(varOther);
+					}
 				}
 				if (varOther.getDomain().isEmpty()){
 					return false;
