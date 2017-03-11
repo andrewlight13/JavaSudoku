@@ -1,5 +1,6 @@
 package cspSolver;
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -9,13 +10,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Queue;
-
+import javafx.util.Pair;
 import sudoku.Converter;
 import sudoku.SudokuFile;
 /**
  * Backtracking solver. 
  *
  */
+
 public class BTSolver implements Runnable{
 
 	//===============================================================================
@@ -185,6 +187,7 @@ public class BTSolver implements Runnable{
 	 */
 	private boolean forwardChecking()
 	{
+		
 		for(Variable v: network.getVariables()) {
 			if(v.isAssigned()) {
 				for(Variable vOther: network.getNeighborsOfVariable(v)) {
@@ -201,12 +204,47 @@ public class BTSolver implements Runnable{
 	/**
 	 * TODO: Implement Maintaining Arc Consistency.
 	 */
+	private boolean revise(Variable vi, Variable vj)
+	{
+		boolean revised = false;
+		if (vj.isAssigned()){
+			vi.removeValueFromDomain(vj.getAssignment());
+			if (vi.getDomain().size() == 1)
+				revised = true;
+		}
+		
+		return revised;
+	}
+	
 	private boolean arcConsistency()
 	{
-		//System.out.println("ACCCCCCCCCC");
-		Queue<Variable> varWithDomain1 = new LinkedList<Variable>();
+		Queue<Pair<Variable,Variable>> Arcs = new LinkedList<Pair<Variable,Variable>>(); 
 		for (Variable v: network.getVariables()){
-			if (v.getDomain().size() == 1){
+			for (Variable vOther : network.getNeighborsOfVariable(v)){
+				Arcs.add(new Pair<>(v,vOther));
+			}
+		}
+		while(!Arcs.isEmpty()){
+			Pair<Variable,Variable> p = Arcs.remove();
+			Variable vi = p.getKey();
+			Variable vj = p.getValue();
+			if (revise(vi, vj)){
+				if(vi.getDomain().isEmpty()){
+					return false;
+				}
+				for(Variable vk : network.getNeighborsOfVariable(vi)){
+					if(vk != vj){
+						if(!vk.isAssigned())
+							Arcs.add(new Pair<>(vk,vi));
+					}
+				}
+			}
+					
+		}
+		return true;
+	}
+		/*for (Variable v: network.getVariables()){
+			if (v.isAssigned()){
 				System.out.println(v.getName() + " " + v.getAssignment());
 				varWithDomain1.add(v);
 			}
@@ -228,8 +266,8 @@ public class BTSolver implements Runnable{
 			}
 		
 		}
-		return true;
-	}
+		return true;*/
+	//}
 	/**
 	 * Naked Pairs algorithm
 	 *		we'll want to do this with at least forward checking, as there aren't any pairs with assignmentsCheck
