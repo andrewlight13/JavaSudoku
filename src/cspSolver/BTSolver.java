@@ -39,6 +39,8 @@ public class BTSolver implements Runnable{
 	private VariableSelectionHeuristic varHeuristics;
 	private ValueSelectionHeuristic valHeuristics;
 	private ConsistencyCheck cChecks;
+	private boolean nakPair;
+	private boolean nakTrip;
 	//===============================================================================
 	// Constructors
 	//===============================================================================
@@ -49,6 +51,8 @@ public class BTSolver implements Runnable{
 		this.sudokuGrid = sf;
 		numAssignments = 0;
 		numBacktracks = 0;
+		nakPair = false;
+		nakTrip = false;
 	}
 
 	//===============================================================================
@@ -68,6 +72,12 @@ public class BTSolver implements Runnable{
 	public void setConsistencyChecks(ConsistencyCheck cc)
 	{
 		this.cChecks = cc;
+	}
+	public void setNakedPair(boolean b){
+		nakPair = b;
+	}
+	public void setNakedTriple(boolean b){
+		nakTrip = b;
 	}
 	//===============================================================================
 	// Accessors
@@ -204,10 +214,10 @@ public class BTSolver implements Runnable{
 		while(!varWithDomain1.isEmpty()){
 			Variable var = varWithDomain1.remove();
 			for (Variable varOther: network.getNeighborsOfVariable(var)){
-				if (varOther.getDomain().size() != 1){
+				if (!varOther.isAssigned()){
 					//System.out.println("inside the loop");
 					varOther.removeValueFromDomain(var.getAssignment());
-					if(varOther.getDomain().size() == 1){
+					if(varOther.isAssigned()){
 						varWithDomain1.add(varOther);
 					}
 				}
@@ -221,12 +231,13 @@ public class BTSolver implements Runnable{
 		return true;
 	}
 	/**
-	 * TODO: Implement Naked Pairs
+	 * Naked Pairs algorithm
+	 *		we'll want to do this with at least forward checking, as there aren't any pairs with assignmentsCheck
 	 * @return true if culling naked pairs doesn't result in inconsistencies, false if graph becomes inconsistent
 	 */
 	private boolean nakedPair(){
-		System.out.println("NAKED PAIRS");
-		if(forwardChecking() == false) return false;
+		//System.out.println("NAKED PAIRS");
+		//if(forwardChecking() == false) return false;
 		ArrayList<Variable> checkedVars = new ArrayList<Variable>();	//list of tuples that have already been checked in this consistency check
 		for(Variable v: network.getVariables()) {
 			if(!v.isAssigned() && !checkedVars.contains(v) && v.getDomain().size() == 2) {														//if you've found an unassigned and unchecked pair
@@ -259,10 +270,52 @@ public class BTSolver implements Runnable{
 	}
 	/**
 	 * TODO: Implement Naked Triples
-	 * @return true if culling naked pairs doesn't result in inconsistencies, false if graph becomes inconsistent
+	 * @return true if culling naked triples doesn't result in inconsistencies, false if graph becomes inconsistent
 	 */
 	private boolean nakedTriple(){
-		//don't actually run this like that, it'll break everything
+		//System.out.println("NAKED TRIPLES");
+		ArrayList<Variable> checkedVars = new ArrayList<Variable>();	//list of tuples that have already been checked in this consistency check
+		for(Variable v: network.getVariables()) {
+			if(!v.isAssigned() && !checkedVars.contains(v) && v.getDomain().size() == 3) {
+				//System.out.println("FOUND FIRST" + v.getDomain().getValues());
+				int one = v.getDomain().getValues().get(0);
+				int two = v.getDomain().getValues().get(1);
+				int three = v.getDomain().getValues().get(2);
+				
+				for(Variable second : network.getNeighborsOfVariable(v)){	
+					if(!second.isAssigned() && !checkedVars.contains(second) && second.getDomain().size() <= 3 && second.getDomain().subset(v.getDomain())){
+						for(Constraint c : network.getConstraintsContainingVariable(v)){
+							for(Constraint d : network.getConstraintsContainingVariable(second)){
+								if(c==d){
+									for(Variable third: c.vars){
+										if(!third.isAssigned() && !checkedVars.contains(third) && third != second && third != v && third.getDomain().size() <= 3 && third.getDomain().subset(v.getDomain())){
+											//checkedVars.add(v);
+											//checkedVars.add(second);
+											checkedVars.add(third);
+											//System.out.println("NOW COMPARING: " + v.getDomain().getValues() + " and " + second.getDomain().getValues() + " plus " + third.getDomain().getValues());
+											for(Variable checker : c.vars){
+												if(!checker.equals(v) && !checker.equals(second) && !checker.equals(third)){
+													//System.out.println("culling from: " + checker.getDomain().getValues());
+													checker.getDomain().remove(one);
+													checker.getDomain().remove(two);
+													checker.getDomain().remove(three);
+													//System.out.println("culled: " + checker.getDomain().getValues());
+													if(checker.getDomain().isEmpty()){
+														return false;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					//checkedVars.add(second);
+				}
+				//checkedVars.add(v);	
+			}
+		}
 		return true;
 	}
 	/**
@@ -537,7 +590,8 @@ public class BTSolver implements Runnable{
 				v.updateDomain(new Domain(i));
 				numAssignments++;
 				boolean isConsistent = checkConsistency();
-				
+				if(isConsistent && nakPair) isConsistent = nakedPair();
+				if(isConsistent && nakTrip) isConsistent = nakedTriple();
 				//move to the next assignment
 				if(isConsistent)
 				{		
