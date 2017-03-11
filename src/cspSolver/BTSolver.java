@@ -190,6 +190,7 @@ public class BTSolver implements Runnable{
 		
 		for(Variable v: network.getVariables()) {
 			if(v.isAssigned()) {
+				System.out.println(v.getName() + " " + v.getAssignment());
 				for(Variable vOther: network.getNeighborsOfVariable(v)) {
 					vOther.removeValueFromDomain(v.getAssignment());
 					if(vOther.getDomain().isEmpty()) {
@@ -228,21 +229,35 @@ public class BTSolver implements Runnable{
 			Pair<Variable,Variable> p = Arcs.remove();
 			Variable vi = p.getKey();
 			Variable vj = p.getValue();
-			if (revise(vi, vj)){
-				if(vi.getDomain().isEmpty()){
+			if (vj.isAssigned()){
+				vi.removeValueFromDomain(vj.getAssignment());
+				if(vi.getDomain().isEmpty())
 					return false;
-				}
-				for(Variable vk : network.getNeighborsOfVariable(vi)){
-					if(vk != vj){
-						if(!vk.isAssigned())
-							Arcs.add(new Pair<>(vk,vi));
+				if(vi.getDomain().size() ==1){
+					for(Variable vk : network.getNeighborsOfVariable(vi)){
+						if(vk != vj){
+							if(!vk.isAssigned())
+								Arcs.add(new Pair<>(vk,vi));
+						}
 					}
 				}
+					
 			}
 					
 		}
 		return true;
 	}
+	/*if (revise(vi, vj)){
+	if(vi.getDomain().isEmpty()){
+		return false;
+	}
+	for(Variable vk : network.getNeighborsOfVariable(vi)){
+		if(vk != vj){
+			if(!vk.isAssigned())
+				Arcs.add(new Pair<>(vk,vi));
+		}
+	}
+}*/
 		/*for (Variable v: network.getVariables()){
 			if (v.isAssigned()){
 				System.out.println(v.getName() + " " + v.getAssignment());
