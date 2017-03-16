@@ -494,7 +494,7 @@ public class BTSolver implements Runnable{
 				for(Variable n : network.getNeighborsOfVariable(v)){
 					if(!n.isAssigned()) constraints++;
 				}
-				if(constraints >= maxConstraints){
+				if(constraints > maxConstraints){
 					maxConstraints = constraints;
 					returnValue = v;
 					print = true;
