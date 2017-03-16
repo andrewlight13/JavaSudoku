@@ -5,18 +5,19 @@ Sudoku (Java) Report
 
 
 Difficulty Level: Easy
+
 Consistency Check: None
 ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:225 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
-PE2.txt Time taken:97 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
-PE3.txt Time taken:5124 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
-PE4.txt Time taken:423 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
-PE5.txt Time taken:29 ms Number of assignments: 505 Number of backtracks: 460 Solved
-Solution found for 
-Average runtime: 1179.6 ms
+PE1.txt Time taken:270 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
+PE2.txt Time taken:170 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
+PE3.txt Time taken:4723 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
+PE4.txt Time taken:480 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
+PE5.txt Time taken:14 ms Number of assignments: 505 Number of backtracks: 460 Solved
+Average Solution Results: 
+Average runtime: 1131.4 ms
 Average number of assignments per puzzle: 38098.4
 Average number of backtracks per puzzle: 38048.6
 
@@ -26,13 +27,13 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: false
-PE1.txt Time taken:43 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
-PE2.txt Time taken:51 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
-PE3.txt Time taken:4674 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
-PE4.txt Time taken:380 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
+PE1.txt Time taken:46 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
+PE2.txt Time taken:54 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
+PE3.txt Time taken:4701 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
+PE4.txt Time taken:388 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
 PE5.txt Time taken:14 ms Number of assignments: 505 Number of backtracks: 460 Solved
-Solution found for 
-Average runtime: 1032.4 ms
+Average Solution Results: 
+Average runtime: 1040.6 ms
 Average number of assignments per puzzle: 38098.4
 Average number of backtracks per puzzle: 38048.6
 
@@ -42,13 +43,13 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:49 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
-PE2.txt Time taken:51 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
-PE3.txt Time taken:4882 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
-PE4.txt Time taken:384 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
+PE1.txt Time taken:43 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
+PE2.txt Time taken:52 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
+PE3.txt Time taken:4595 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
+PE4.txt Time taken:367 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
 PE5.txt Time taken:13 ms Number of assignments: 505 Number of backtracks: 460 Solved
-Solution found for 
-Average runtime: 1075.8 ms
+Average Solution Results: 
+Average runtime: 1014.0 ms
 Average number of assignments per puzzle: 38098.4
 Average number of backtracks per puzzle: 38048.6
 
@@ -58,13 +59,13 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: false
-PE1.txt Time taken:43 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
-PE2.txt Time taken:50 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
-PE3.txt Time taken:4482 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
-PE4.txt Time taken:383 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
+PE1.txt Time taken:42 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
+PE2.txt Time taken:56 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
+PE3.txt Time taken:4454 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
+PE4.txt Time taken:388 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
 PE5.txt Time taken:14 ms Number of assignments: 505 Number of backtracks: 460 Solved
-Solution found for 
-Average runtime: 994.4 ms
+Average Solution Results: 
+Average runtime: 990.8 ms
 Average number of assignments per puzzle: 38098.4
 Average number of backtracks per puzzle: 38048.6
 
@@ -74,45 +75,45 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:86 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
+PE1.txt Time taken:90 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
+PE2.txt Time taken:684 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
+PE3.txt Time taken:501 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
+PE4.txt Time taken:411 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
+PE5.txt Time taken:10 ms Number of assignments: 424 Number of backtracks: 379 Solved
+Average Solution Results: 
+Average runtime: 339.2 ms
+Average number of assignments per puzzle: 18521.6
+Average number of backtracks per puzzle: 18471.8
+
+
+Consistency Check: None
+ValueSelectionHeuristic: None
+VariableSelectionHeuristic: MinimumRemainingValue
+Naked Pair: true
+Naked Triple: false
+PE1.txt Time taken:85 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
+PE2.txt Time taken:652 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
+PE3.txt Time taken:445 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
+PE4.txt Time taken:365 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
+PE5.txt Time taken:10 ms Number of assignments: 424 Number of backtracks: 379 Solved
+Average Solution Results: 
+Average runtime: 311.4 ms
+Average number of assignments per puzzle: 18521.6
+Average number of backtracks per puzzle: 18471.8
+
+
+Consistency Check: None
+ValueSelectionHeuristic: None
+VariableSelectionHeuristic: MinimumRemainingValue
+Naked Pair: false
+Naked Triple: true
+PE1.txt Time taken:84 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
 PE2.txt Time taken:666 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
 PE3.txt Time taken:440 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
-PE4.txt Time taken:371 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
-PE5.txt Time taken:10 ms Number of assignments: 424 Number of backtracks: 379 Solved
-Solution found for 
-Average runtime: 314.6 ms
-Average number of assignments per puzzle: 18521.6
-Average number of backtracks per puzzle: 18471.8
-
-
-Consistency Check: None
-ValueSelectionHeuristic: None
-VariableSelectionHeuristic: MinimumRemainingValue
-Naked Pair: true
-Naked Triple: false
-PE1.txt Time taken:84 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
-PE2.txt Time taken:649 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
-PE3.txt Time taken:446 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
-PE4.txt Time taken:367 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
+PE4.txt Time taken:363 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
 PE5.txt Time taken:9 ms Number of assignments: 424 Number of backtracks: 379 Solved
-Solution found for 
-Average runtime: 311.0 ms
-Average number of assignments per puzzle: 18521.6
-Average number of backtracks per puzzle: 18471.8
-
-
-Consistency Check: None
-ValueSelectionHeuristic: None
-VariableSelectionHeuristic: MinimumRemainingValue
-Naked Pair: false
-Naked Triple: true
-PE1.txt Time taken:83 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
-PE2.txt Time taken:722 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
-PE3.txt Time taken:435 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
-PE4.txt Time taken:370 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
-PE5.txt Time taken:11 ms Number of assignments: 424 Number of backtracks: 379 Solved
-Solution found for 
-Average runtime: 324.2 ms
+Average Solution Results: 
+Average runtime: 312.4 ms
 Average number of assignments per puzzle: 18521.6
 Average number of backtracks per puzzle: 18471.8
 
@@ -122,13 +123,13 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: false
 Naked Triple: false
-PE1.txt Time taken:83 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
-PE2.txt Time taken:660 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
-PE3.txt Time taken:443 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
-PE4.txt Time taken:367 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
-PE5.txt Time taken:10 ms Number of assignments: 424 Number of backtracks: 379 Solved
-Solution found for 
-Average runtime: 312.6 ms
+PE1.txt Time taken:86 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
+PE2.txt Time taken:665 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
+PE3.txt Time taken:445 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
+PE4.txt Time taken:369 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
+PE5.txt Time taken:9 ms Number of assignments: 424 Number of backtracks: 379 Solved
+Average Solution Results: 
+Average runtime: 314.8 ms
 Average number of assignments per puzzle: 18521.6
 Average number of backtracks per puzzle: 18471.8
 
@@ -138,13 +139,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:77 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
-PE2.txt Time taken:58 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
-PE3.txt Time taken:4623 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
-PE4.txt Time taken:408 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
-PE5.txt Time taken:15 ms Number of assignments: 505 Number of backtracks: 460 Solved
-Solution found for 
-Average runtime: 1036.2 ms
+PE1.txt Time taken:87 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
+PE2.txt Time taken:55 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
+PE3.txt Time taken:4689 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
+PE4.txt Time taken:419 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
+PE5.txt Time taken:14 ms Number of assignments: 505 Number of backtracks: 460 Solved
+Average Solution Results: 
+Average runtime: 1052.8 ms
 Average number of assignments per puzzle: 38098.4
 Average number of backtracks per puzzle: 38048.6
 
@@ -155,12 +156,12 @@ VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: false
 PE1.txt Time taken:43 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
-PE2.txt Time taken:54 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
-PE3.txt Time taken:4508 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
-PE4.txt Time taken:408 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
-PE5.txt Time taken:14 ms Number of assignments: 505 Number of backtracks: 460 Solved
-Solution found for 
-Average runtime: 1005.4 ms
+PE2.txt Time taken:52 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
+PE3.txt Time taken:4427 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
+PE4.txt Time taken:398 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
+PE5.txt Time taken:15 ms Number of assignments: 505 Number of backtracks: 460 Solved
+Average Solution Results: 
+Average runtime: 987.0 ms
 Average number of assignments per puzzle: 38098.4
 Average number of backtracks per puzzle: 38048.6
 
@@ -170,13 +171,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:47 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
+PE1.txt Time taken:43 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
 PE2.txt Time taken:56 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
-PE3.txt Time taken:4640 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
-PE4.txt Time taken:407 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
+PE3.txt Time taken:4638 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
+PE4.txt Time taken:478 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
 PE5.txt Time taken:16 ms Number of assignments: 505 Number of backtracks: 460 Solved
-Solution found for 
-Average runtime: 1033.2 ms
+Average Solution Results: 
+Average runtime: 1046.2 ms
 Average number of assignments per puzzle: 38098.4
 Average number of backtracks per puzzle: 38048.6
 
@@ -186,13 +187,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: false
-PE1.txt Time taken:45 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
-PE2.txt Time taken:55 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
-PE3.txt Time taken:4688 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
-PE4.txt Time taken:400 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
-PE5.txt Time taken:16 ms Number of assignments: 505 Number of backtracks: 460 Solved
-Solution found for 
-Average runtime: 1040.8 ms
+PE1.txt Time taken:46 ms Number of assignments: 1605 Number of backtracks: 1556 Solved
+PE2.txt Time taken:56 ms Number of assignments: 2456 Number of backtracks: 2405 Solved
+PE3.txt Time taken:4909 ms Number of assignments: 170978 Number of backtracks: 170925 Solved
+PE4.txt Time taken:429 ms Number of assignments: 14948 Number of backtracks: 14897 Solved
+PE5.txt Time taken:19 ms Number of assignments: 505 Number of backtracks: 460 Solved
+Average Solution Results: 
+Average runtime: 1091.8 ms
 Average number of assignments per puzzle: 38098.4
 Average number of backtracks per puzzle: 38048.6
 
@@ -202,13 +203,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:97 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
-PE2.txt Time taken:707 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
-PE3.txt Time taken:467 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
-PE4.txt Time taken:440 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
-PE5.txt Time taken:24 ms Number of assignments: 424 Number of backtracks: 379 Solved
-Solution found for 
-Average runtime: 347.0 ms
+PE1.txt Time taken:152 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
+PE2.txt Time taken:904 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
+PE3.txt Time taken:506 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
+PE4.txt Time taken:561 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
+PE5.txt Time taken:66 ms Number of assignments: 424 Number of backtracks: 379 Solved
+Average Solution Results: 
+Average runtime: 437.8 ms
 Average number of assignments per puzzle: 18521.6
 Average number of backtracks per puzzle: 18471.8
 
@@ -218,13 +219,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: false
-PE1.txt Time taken:97 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
-PE2.txt Time taken:947 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
-PE3.txt Time taken:498 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
-PE4.txt Time taken:387 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
-PE5.txt Time taken:11 ms Number of assignments: 424 Number of backtracks: 379 Solved
-Solution found for 
-Average runtime: 388.0 ms
+PE1.txt Time taken:176 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
+PE2.txt Time taken:889 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
+PE3.txt Time taken:531 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
+PE4.txt Time taken:483 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
+PE5.txt Time taken:19 ms Number of assignments: 424 Number of backtracks: 379 Solved
+Average Solution Results: 
+Average runtime: 419.6 ms
 Average number of assignments per puzzle: 18521.6
 Average number of backtracks per puzzle: 18471.8
 
@@ -234,13 +235,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:85 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
-PE2.txt Time taken:688 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
-PE3.txt Time taken:532 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
-PE4.txt Time taken:387 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
-PE5.txt Time taken:9 ms Number of assignments: 424 Number of backtracks: 379 Solved
-Solution found for 
-Average runtime: 340.2 ms
+PE1.txt Time taken:142 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
+PE2.txt Time taken:727 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
+PE3.txt Time taken:491 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
+PE4.txt Time taken:416 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
+PE5.txt Time taken:10 ms Number of assignments: 424 Number of backtracks: 379 Solved
+Average Solution Results: 
+Average runtime: 357.2 ms
 Average number of assignments per puzzle: 18521.6
 Average number of backtracks per puzzle: 18471.8
 
@@ -250,13 +251,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: false
 Naked Triple: false
-PE1.txt Time taken:85 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
-PE2.txt Time taken:693 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
-PE3.txt Time taken:484 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
-PE4.txt Time taken:434 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
-PE5.txt Time taken:11 ms Number of assignments: 424 Number of backtracks: 379 Solved
-Solution found for 
-Average runtime: 341.4 ms
+PE1.txt Time taken:89 ms Number of assignments: 4665 Number of backtracks: 4616 Solved
+PE2.txt Time taken:785 ms Number of assignments: 38294 Number of backtracks: 38243 Solved
+PE3.txt Time taken:509 ms Number of assignments: 27554 Number of backtracks: 27501 Solved
+PE4.txt Time taken:817 ms Number of assignments: 21671 Number of backtracks: 21620 Solved
+PE5.txt Time taken:33 ms Number of assignments: 424 Number of backtracks: 379 Solved
+Average Solution Results: 
+Average runtime: 446.6 ms
 Average number of assignments per puzzle: 18521.6
 Average number of backtracks per puzzle: 18471.8
 
@@ -266,13 +267,13 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:4 ms Number of assignments: 10 Number of backtracks: 6 Solved
-PE2.txt Time taken:3 ms Number of assignments: 12 Number of backtracks: 7 Solved
-PE3.txt Time taken:10 ms Number of assignments: 32 Number of backtracks: 26 Solved
+PE1.txt Time taken:6 ms Number of assignments: 10 Number of backtracks: 6 Solved
+PE2.txt Time taken:12 ms Number of assignments: 12 Number of backtracks: 7 Solved
+PE3.txt Time taken:12 ms Number of assignments: 32 Number of backtracks: 26 Solved
 PE4.txt Time taken:3 ms Number of assignments: 8 Number of backtracks: 2 Solved
 PE5.txt Time taken:2 ms Number of assignments: 9 Number of backtracks: 6 Solved
-Solution found for 
-Average runtime: 4.4 ms
+Average Solution Results: 
+Average runtime: 7.0 ms
 Average number of assignments per puzzle: 14.2
 Average number of backtracks per puzzle: 9.4
 
@@ -284,11 +285,11 @@ Naked Pair: true
 Naked Triple: false
 PE1.txt Time taken:3 ms Number of assignments: 11 Number of backtracks: 6 Solved
 PE2.txt Time taken:4 ms Number of assignments: 12 Number of backtracks: 7 Solved
-PE3.txt Time taken:13 ms Number of assignments: 62 Number of backtracks: 53 Solved
-PE4.txt Time taken:2 ms Number of assignments: 8 Number of backtracks: 2 Solved
+PE3.txt Time taken:14 ms Number of assignments: 62 Number of backtracks: 53 Solved
+PE4.txt Time taken:3 ms Number of assignments: 8 Number of backtracks: 2 Solved
 PE5.txt Time taken:1 ms Number of assignments: 9 Number of backtracks: 6 Solved
-Solution found for 
-Average runtime: 4.6 ms
+Average Solution Results: 
+Average runtime: 5.0 ms
 Average number of assignments per puzzle: 20.4
 Average number of backtracks per puzzle: 14.8
 
@@ -298,12 +299,12 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:2 ms Number of assignments: 12 Number of backtracks: 7 Solved
+PE1.txt Time taken:3 ms Number of assignments: 12 Number of backtracks: 7 Solved
 PE2.txt Time taken:2 ms Number of assignments: 13 Number of backtracks: 8 Solved
 PE3.txt Time taken:6 ms Number of assignments: 30 Number of backtracks: 23 Solved
-PE4.txt Time taken:4 ms Number of assignments: 8 Number of backtracks: 2 Solved
-PE5.txt Time taken:1 ms Number of assignments: 8 Number of backtracks: 5 Solved
-Solution found for 
+PE4.txt Time taken:2 ms Number of assignments: 8 Number of backtracks: 2 Solved
+PE5.txt Time taken:2 ms Number of assignments: 8 Number of backtracks: 5 Solved
+Average Solution Results: 
 Average runtime: 3.0 ms
 Average number of assignments per puzzle: 14.2
 Average number of backtracks per puzzle: 9.0
@@ -317,10 +318,10 @@ Naked Triple: false
 PE1.txt Time taken:2 ms Number of assignments: 11 Number of backtracks: 6 Solved
 PE2.txt Time taken:3 ms Number of assignments: 15 Number of backtracks: 9 Solved
 PE3.txt Time taken:13 ms Number of assignments: 78 Number of backtracks: 69 Solved
-PE4.txt Time taken:4 ms Number of assignments: 17 Number of backtracks: 7 Solved
+PE4.txt Time taken:6 ms Number of assignments: 17 Number of backtracks: 7 Solved
 PE5.txt Time taken:0 ms Number of assignments: 8 Number of backtracks: 5 Solved
-Solution found for 
-Average runtime: 4.4 ms
+Average Solution Results: 
+Average runtime: 4.8 ms
 Average number of assignments per puzzle: 25.8
 Average number of backtracks per puzzle: 19.2
 
@@ -331,12 +332,12 @@ VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: true
 PE1.txt Time taken:2 ms Number of assignments: 8 Number of backtracks: 3 Solved
-PE2.txt Time taken:2 ms Number of assignments: 19 Number of backtracks: 14 Solved
-PE3.txt Time taken:3 ms Number of assignments: 13 Number of backtracks: 6 Solved
-PE4.txt Time taken:4 ms Number of assignments: 12 Number of backtracks: 8 Solved
+PE2.txt Time taken:6 ms Number of assignments: 19 Number of backtracks: 14 Solved
+PE3.txt Time taken:4 ms Number of assignments: 13 Number of backtracks: 6 Solved
+PE4.txt Time taken:3 ms Number of assignments: 12 Number of backtracks: 8 Solved
 PE5.txt Time taken:2 ms Number of assignments: 6 Number of backtracks: 3 Solved
-Solution found for 
-Average runtime: 2.6 ms
+Average Solution Results: 
+Average runtime: 3.4 ms
 Average number of assignments per puzzle: 11.6
 Average number of backtracks per puzzle: 6.8
 
@@ -347,12 +348,12 @@ VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: false
 PE1.txt Time taken:2 ms Number of assignments: 8 Number of backtracks: 3 Solved
-PE2.txt Time taken:6 ms Number of assignments: 29 Number of backtracks: 22 Solved
-PE3.txt Time taken:3 ms Number of assignments: 13 Number of backtracks: 6 Solved
-PE4.txt Time taken:6 ms Number of assignments: 22 Number of backtracks: 17 Solved
-PE5.txt Time taken:2 ms Number of assignments: 6 Number of backtracks: 3 Solved
-Solution found for 
-Average runtime: 3.8 ms
+PE2.txt Time taken:7 ms Number of assignments: 29 Number of backtracks: 22 Solved
+PE3.txt Time taken:2 ms Number of assignments: 13 Number of backtracks: 6 Solved
+PE4.txt Time taken:5 ms Number of assignments: 22 Number of backtracks: 17 Solved
+PE5.txt Time taken:1 ms Number of assignments: 6 Number of backtracks: 3 Solved
+Average Solution Results: 
+Average runtime: 3.4 ms
 Average number of assignments per puzzle: 15.6
 Average number of backtracks per puzzle: 10.2
 
@@ -362,15 +363,15 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:2 ms Number of assignments: 11 Number of backtracks: 5 Solved
-PE2.txt Time taken:7 ms Number of assignments: 34 Number of backtracks: 28 Solved
-PE3.txt Time taken:7 ms Number of assignments: 24 Number of backtracks: 15 Solved
-PE4.txt Time taken:5 ms Number of assignments: 20 Number of backtracks: 15 Solved
-PE5.txt Time taken:2 ms Number of assignments: 7 Number of backtracks: 3 Solved
-Solution found for 
-Average runtime: 4.6 ms
-Average number of assignments per puzzle: 19.2
-Average number of backtracks per puzzle: 13.2
+PE1.txt Time taken:2 ms Number of assignments: 10 Number of backtracks: 4 Solved
+PE2.txt Time taken:6 ms Number of assignments: 35 Number of backtracks: 29 Solved
+PE3.txt Time taken:8 ms Number of assignments: 30 Number of backtracks: 21 Solved
+PE4.txt Time taken:5 ms Number of assignments: 16 Number of backtracks: 11 Solved
+PE5.txt Time taken:7 ms Number of assignments: 7 Number of backtracks: 3 Solved
+Average Solution Results: 
+Average runtime: 5.6 ms
+Average number of assignments per puzzle: 19.6
+Average number of backtracks per puzzle: 13.6
 
 
 Consistency Check: ForwardChecking
@@ -380,11 +381,11 @@ Naked Pair: false
 Naked Triple: false
 PE1.txt Time taken:3 ms Number of assignments: 13 Number of backtracks: 6 Solved
 PE2.txt Time taken:20 ms Number of assignments: 114 Number of backtracks: 105 Solved
-PE3.txt Time taken:5 ms Number of assignments: 24 Number of backtracks: 16 Solved
-PE4.txt Time taken:8 ms Number of assignments: 31 Number of backtracks: 25 Solved
-PE5.txt Time taken:2 ms Number of assignments: 6 Number of backtracks: 2 Solved
-Solution found for 
-Average runtime: 7.6 ms
+PE3.txt Time taken:6 ms Number of assignments: 24 Number of backtracks: 16 Solved
+PE4.txt Time taken:6 ms Number of assignments: 31 Number of backtracks: 25 Solved
+PE5.txt Time taken:1 ms Number of assignments: 6 Number of backtracks: 2 Solved
+Average Solution Results: 
+Average runtime: 7.2 ms
 Average number of assignments per puzzle: 37.6
 Average number of backtracks per puzzle: 30.8
 
@@ -394,13 +395,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:2 ms Number of assignments: 8 Number of backtracks: 4 Solved
-PE2.txt Time taken:6 ms Number of assignments: 17 Number of backtracks: 12 Solved
-PE3.txt Time taken:8 ms Number of assignments: 34 Number of backtracks: 28 Solved
+PE1.txt Time taken:3 ms Number of assignments: 8 Number of backtracks: 4 Solved
+PE2.txt Time taken:2 ms Number of assignments: 17 Number of backtracks: 12 Solved
+PE3.txt Time taken:6 ms Number of assignments: 34 Number of backtracks: 28 Solved
 PE4.txt Time taken:2 ms Number of assignments: 6 Number of backtracks: 1 Solved
 PE5.txt Time taken:1 ms Number of assignments: 9 Number of backtracks: 6 Solved
-Solution found for 
-Average runtime: 3.8 ms
+Average Solution Results: 
+Average runtime: 2.8 ms
 Average number of assignments per puzzle: 14.8
 Average number of backtracks per puzzle: 10.2
 
@@ -411,12 +412,12 @@ VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: false
 PE1.txt Time taken:2 ms Number of assignments: 9 Number of backtracks: 4 Solved
-PE2.txt Time taken:4 ms Number of assignments: 12 Number of backtracks: 7 Solved
-PE3.txt Time taken:7 ms Number of assignments: 60 Number of backtracks: 51 Solved
-PE4.txt Time taken:3 ms Number of assignments: 8 Number of backtracks: 2 Solved
+PE2.txt Time taken:3 ms Number of assignments: 12 Number of backtracks: 7 Solved
+PE3.txt Time taken:48 ms Number of assignments: 60 Number of backtracks: 51 Solved
+PE4.txt Time taken:2 ms Number of assignments: 8 Number of backtracks: 2 Solved
 PE5.txt Time taken:1 ms Number of assignments: 9 Number of backtracks: 6 Solved
-Solution found for 
-Average runtime: 3.4 ms
+Average Solution Results: 
+Average runtime: 11.2 ms
 Average number of assignments per puzzle: 19.6
 Average number of backtracks per puzzle: 14.0
 
@@ -426,15 +427,15 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:2 ms Number of assignments: 10 Number of backtracks: 5 Solved
-PE2.txt Time taken:3 ms Number of assignments: 17 Number of backtracks: 12 Solved
-PE3.txt Time taken:8 ms Number of assignments: 30 Number of backtracks: 23 Solved
-PE4.txt Time taken:3 ms Number of assignments: 8 Number of backtracks: 2 Solved
-PE5.txt Time taken:2 ms Number of assignments: 8 Number of backtracks: 5 Solved
-Solution found for 
-Average runtime: 3.6 ms
-Average number of assignments per puzzle: 14.6
-Average number of backtracks per puzzle: 9.4
+PE1.txt Time taken:3 ms Number of assignments: 10 Number of backtracks: 5 Solved
+PE2.txt Time taken:3 ms Number of assignments: 16 Number of backtracks: 11 Solved
+PE3.txt Time taken:5 ms Number of assignments: 30 Number of backtracks: 23 Solved
+PE4.txt Time taken:4 ms Number of assignments: 17 Number of backtracks: 7 Solved
+PE5.txt Time taken:1 ms Number of assignments: 8 Number of backtracks: 5 Solved
+Average Solution Results: 
+Average runtime: 3.2 ms
+Average number of assignments per puzzle: 16.2
+Average number of backtracks per puzzle: 10.2
 
 
 Consistency Check: ForwardChecking
@@ -442,13 +443,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: false
-PE1.txt Time taken:2 ms Number of assignments: 9 Number of backtracks: 4 Solved
-PE2.txt Time taken:4 ms Number of assignments: 25 Number of backtracks: 19 Solved
-PE3.txt Time taken:10 ms Number of assignments: 76 Number of backtracks: 67 Solved
+PE1.txt Time taken:1 ms Number of assignments: 9 Number of backtracks: 4 Solved
+PE2.txt Time taken:3 ms Number of assignments: 25 Number of backtracks: 19 Solved
+PE3.txt Time taken:7 ms Number of assignments: 76 Number of backtracks: 67 Solved
 PE4.txt Time taken:4 ms Number of assignments: 21 Number of backtracks: 11 Solved
 PE5.txt Time taken:1 ms Number of assignments: 8 Number of backtracks: 5 Solved
-Solution found for 
-Average runtime: 4.2 ms
+Average Solution Results: 
+Average runtime: 3.2 ms
 Average number of assignments per puzzle: 27.8
 Average number of backtracks per puzzle: 21.2
 
@@ -459,14 +460,14 @@ VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: true
 PE1.txt Time taken:2 ms Number of assignments: 6 Number of backtracks: 1 Solved
-PE2.txt Time taken:6 ms Number of assignments: 20 Number of backtracks: 15 Solved
-PE3.txt Time taken:3 ms Number of assignments: 12 Number of backtracks: 5 Solved
-PE4.txt Time taken:4 ms Number of assignments: 16 Number of backtracks: 12 Solved
-PE5.txt Time taken:2 ms Number of assignments: 6 Number of backtracks: 3 Solved
-Solution found for 
-Average runtime: 3.4 ms
-Average number of assignments per puzzle: 12.0
-Average number of backtracks per puzzle: 7.2
+PE2.txt Time taken:5 ms Number of assignments: 20 Number of backtracks: 15 Solved
+PE3.txt Time taken:129 ms Number of assignments: 12 Number of backtracks: 5 Solved
+PE4.txt Time taken:8 ms Number of assignments: 12 Number of backtracks: 8 Solved
+PE5.txt Time taken:5 ms Number of assignments: 6 Number of backtracks: 3 Solved
+Average Solution Results: 
+Average runtime: 29.8 ms
+Average number of assignments per puzzle: 11.2
+Average number of backtracks per puzzle: 6.4
 
 
 Consistency Check: ForwardChecking
@@ -474,13 +475,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: false
-PE1.txt Time taken:2 ms Number of assignments: 6 Number of backtracks: 1 Solved
-PE2.txt Time taken:5 ms Number of assignments: 29 Number of backtracks: 22 Solved
-PE3.txt Time taken:2 ms Number of assignments: 12 Number of backtracks: 5 Solved
-PE4.txt Time taken:6 ms Number of assignments: 23 Number of backtracks: 18 Solved
+PE1.txt Time taken:5 ms Number of assignments: 6 Number of backtracks: 1 Solved
+PE2.txt Time taken:21 ms Number of assignments: 29 Number of backtracks: 22 Solved
+PE3.txt Time taken:5 ms Number of assignments: 12 Number of backtracks: 5 Solved
+PE4.txt Time taken:7 ms Number of assignments: 23 Number of backtracks: 18 Solved
 PE5.txt Time taken:1 ms Number of assignments: 6 Number of backtracks: 3 Solved
-Solution found for 
-Average runtime: 3.2 ms
+Average Solution Results: 
+Average runtime: 7.8 ms
 Average number of assignments per puzzle: 15.2
 Average number of backtracks per puzzle: 9.8
 
@@ -490,15 +491,15 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:3 ms Number of assignments: 9 Number of backtracks: 3 Solved
-PE2.txt Time taken:9 ms Number of assignments: 35 Number of backtracks: 29 Solved
-PE3.txt Time taken:7 ms Number of assignments: 22 Number of backtracks: 14 Solved
-PE4.txt Time taken:4 ms Number of assignments: 17 Number of backtracks: 12 Solved
+PE1.txt Time taken:2 ms Number of assignments: 9 Number of backtracks: 3 Solved
+PE2.txt Time taken:10 ms Number of assignments: 39 Number of backtracks: 32 Solved
+PE3.txt Time taken:7 ms Number of assignments: 28 Number of backtracks: 20 Solved
+PE4.txt Time taken:5 ms Number of assignments: 17 Number of backtracks: 12 Solved
 PE5.txt Time taken:2 ms Number of assignments: 7 Number of backtracks: 3 Solved
-Solution found for 
-Average runtime: 5.0 ms
-Average number of assignments per puzzle: 18.0
-Average number of backtracks per puzzle: 12.2
+Average Solution Results: 
+Average runtime: 5.2 ms
+Average number of assignments per puzzle: 20.0
+Average number of backtracks per puzzle: 14.0
 
 
 Consistency Check: ForwardChecking
@@ -506,13 +507,13 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: false
 Naked Triple: false
-PE1.txt Time taken:2 ms Number of assignments: 10 Number of backtracks: 3 Solved
-PE2.txt Time taken:18 ms Number of assignments: 114 Number of backtracks: 105 Solved
-PE3.txt Time taken:5 ms Number of assignments: 28 Number of backtracks: 20 Solved
-PE4.txt Time taken:7 ms Number of assignments: 31 Number of backtracks: 25 Solved
-PE5.txt Time taken:2 ms Number of assignments: 6 Number of backtracks: 2 Solved
-Solution found for 
-Average runtime: 6.8 ms
+PE1.txt Time taken:3 ms Number of assignments: 10 Number of backtracks: 3 Solved
+PE2.txt Time taken:40 ms Number of assignments: 114 Number of backtracks: 105 Solved
+PE3.txt Time taken:8 ms Number of assignments: 28 Number of backtracks: 20 Solved
+PE4.txt Time taken:10 ms Number of assignments: 31 Number of backtracks: 25 Solved
+PE5.txt Time taken:5 ms Number of assignments: 6 Number of backtracks: 2 Solved
+Average Solution Results: 
+Average runtime: 13.2 ms
 Average number of assignments per puzzle: 37.8
 Average number of backtracks per puzzle: 31.0
 
@@ -522,15 +523,15 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:15 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:7 ms Number of assignments: 4 Number of backtracks: 0 Solved
-PE4.txt Time taken:3 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 5.4 ms
-Average number of assignments per puzzle: 2.0
-Average number of backtracks per puzzle: 0.0
+PE1.txt Time taken:25 ms Number of assignments: 4 Number of backtracks: 3 Solved
+PE2.txt Time taken:10 ms Number of assignments: 5 Number of backtracks: 3 Solved
+PE3.txt Time taken:20 ms Number of assignments: 13 Number of backtracks: 10 Solved
+PE4.txt Time taken:5 ms Number of assignments: 2 Number of backtracks: 0 Solved
+PE5.txt Time taken:5 ms Number of assignments: 5 Number of backtracks: 4 Solved
+Average Solution Results: 
+Average runtime: 13.0 ms
+Average number of assignments per puzzle: 5.8
+Average number of backtracks per puzzle: 4.0
 
 
 Consistency Check: ArcConsistency
@@ -538,15 +539,15 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: true
 Naked Triple: false
-PE1.txt Time taken:5 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE2.txt Time taken:2 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:4 ms Number of assignments: 4 Number of backtracks: 0 Solved
-PE4.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 2.8 ms
-Average number of assignments per puzzle: 2.0
-Average number of backtracks per puzzle: 0.0
+PE1.txt Time taken:3 ms Number of assignments: 4 Number of backtracks: 3 Solved
+PE2.txt Time taken:22 ms Number of assignments: 5 Number of backtracks: 3 Solved
+PE3.txtFailed to find a solution
+PE4.txt Time taken:25 ms Number of assignments: 2 Number of backtracks: 0 Solved
+PE5.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 4 Solved
+Average Solution Results: 
+Average runtime: 10.6 ms
+Average number of assignments per puzzle: 3.2
+Average number of backtracks per puzzle: 2.0
 
 
 Consistency Check: ArcConsistency
@@ -554,15 +555,15 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE2.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:3 ms Number of assignments: 4 Number of backtracks: 1 Solved
+PE1.txt Time taken:4 ms Number of assignments: 4 Number of backtracks: 3 Solved
+PE2.txt Time taken:4 ms Number of assignments: 5 Number of backtracks: 3 Solved
+PE3.txt Time taken:20 ms Number of assignments: 17 Number of backtracks: 13 Solved
 PE4.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 1.2 ms
-Average number of assignments per puzzle: 2.0
-Average number of backtracks per puzzle: 0.2
+PE5.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 4 Solved
+Average Solution Results: 
+Average runtime: 6.4 ms
+Average number of assignments per puzzle: 6.6
+Average number of backtracks per puzzle: 4.6
 
 
 Consistency Check: ArcConsistency
@@ -570,15 +571,15 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: None
 Naked Pair: false
 Naked Triple: false
-PE1.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:3 ms Number of assignments: 8 Number of backtracks: 0 Solved
-PE4.txt Time taken:4 ms Number of assignments: 9 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 2.0 ms
-Average number of assignments per puzzle: 4.2
-Average number of backtracks per puzzle: 0.0
+PE1.txt Time taken:4 ms Number of assignments: 4 Number of backtracks: 3 Solved
+PE2.txt Time taken:2 ms Number of assignments: 5 Number of backtracks: 3 Solved
+PE3.txt Time taken:16 ms Number of assignments: 35 Number of backtracks: 29 Solved
+PE4.txt Time taken:15 ms Number of assignments: 13 Number of backtracks: 4 Solved
+PE5.txt Time taken:24 ms Number of assignments: 5 Number of backtracks: 4 Solved
+Average Solution Results: 
+Average runtime: 12.2 ms
+Average number of assignments per puzzle: 12.4
+Average number of backtracks per puzzle: 8.6
 
 
 Consistency Check: ArcConsistency
@@ -586,15 +587,15 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE2.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:1 ms Number of assignments: 3 Number of backtracks: 0 Solved
-PE4.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 0.6 ms
-Average number of assignments per puzzle: 1.6
-Average number of backtracks per puzzle: 0.0
+PE1.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 1 Solved
+PE2.txt Time taken:8 ms Number of assignments: 12 Number of backtracks: 10 Solved
+PE3.txt Time taken:5 ms Number of assignments: 5 Number of backtracks: 2 Solved
+PE4.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 4 Solved
+PE5.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 1 Solved
+Average Solution Results: 
+Average runtime: 3.8 ms
+Average number of assignments per puzzle: 5.2
+Average number of backtracks per puzzle: 3.6
 
 
 Consistency Check: ArcConsistency
@@ -602,111 +603,111 @@ ValueSelectionHeuristic: None
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: false
-PE1.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE4.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 0.8 ms
-Average number of assignments per puzzle: 1.4
-Average number of backtracks per puzzle: 0.0
-
-
-Consistency Check: ArcConsistency
-ValueSelectionHeuristic: None
-VariableSelectionHeuristic: MinimumRemainingValue
-Naked Pair: false
-Naked Triple: true
-PE1.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:2 ms Number of assignments: 3 Number of backtracks: 0 Solved
-PE4.txt Time taken:2 ms Number of assignments: 4 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 1.4 ms
-Average number of assignments per puzzle: 2.0
-Average number of backtracks per puzzle: 0.0
-
-
-Consistency Check: ArcConsistency
-ValueSelectionHeuristic: None
-VariableSelectionHeuristic: MinimumRemainingValue
-Naked Pair: false
-Naked Triple: false
-PE1.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:2 ms Number of assignments: 4 Number of backtracks: 0 Solved
-PE4.txt Time taken:1 ms Number of assignments: 3 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 1.2 ms
-Average number of assignments per puzzle: 2.0
-Average number of backtracks per puzzle: 0.0
-
-
-Consistency Check: ArcConsistency
-ValueSelectionHeuristic: LeastConstrainingValue
-VariableSelectionHeuristic: None
-Naked Pair: true
-Naked Triple: true
-PE1.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE2.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:2 ms Number of assignments: 4 Number of backtracks: 0 Solved
-PE4.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:2 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 1.2 ms
-Average number of assignments per puzzle: 2.0
-Average number of backtracks per puzzle: 0.0
-
-
-Consistency Check: ArcConsistency
-ValueSelectionHeuristic: LeastConstrainingValue
-VariableSelectionHeuristic: None
-Naked Pair: true
-Naked Triple: false
-PE1.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:4 ms Number of assignments: 3 Number of backtracks: 0 Solved
-PE4.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
+PE1.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 1 Solved
+PE2.txtFailed to find a solution
+PE3.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 2 Solved
+PE4.txt Time taken:2 ms Number of assignments: 5 Number of backtracks: 4 Solved
+PE5.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 1 Solved
+Average Solution Results: 
 Average runtime: 1.6 ms
-Average number of assignments per puzzle: 1.8
-Average number of backtracks per puzzle: 0.0
-
-
-Consistency Check: ArcConsistency
-ValueSelectionHeuristic: LeastConstrainingValue
-VariableSelectionHeuristic: None
-Naked Pair: false
-Naked Triple: true
-PE1.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE2.txt Time taken:14 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:3 ms Number of assignments: 4 Number of backtracks: 1 Solved
-PE4.txt Time taken:3 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 4.6 ms
-Average number of assignments per puzzle: 2.0
-Average number of backtracks per puzzle: 0.2
-
-
-Consistency Check: ArcConsistency
-ValueSelectionHeuristic: LeastConstrainingValue
-VariableSelectionHeuristic: None
-Naked Pair: false
-Naked Triple: false
-PE1.txt Time taken:0 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE2.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:2 ms Number of assignments: 7 Number of backtracks: 0 Solved
-PE4.txt Time taken:1 ms Number of assignments: 3 Number of backtracks: 0 Solved
-PE5.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 0.6 ms
 Average number of assignments per puzzle: 2.8
-Average number of backtracks per puzzle: 0.0
+Average number of backtracks per puzzle: 1.6
+
+
+Consistency Check: ArcConsistency
+ValueSelectionHeuristic: None
+VariableSelectionHeuristic: MinimumRemainingValue
+Naked Pair: false
+Naked Triple: true
+PE1.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 1 Solved
+PE2.txt Time taken:6 ms Number of assignments: 12 Number of backtracks: 10 Solved
+PE3.txt Time taken:4 ms Number of assignments: 8 Number of backtracks: 4 Solved
+PE4.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 4 Solved
+PE5.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 1 Solved
+Average Solution Results: 
+Average runtime: 3.2 ms
+Average number of assignments per puzzle: 5.8
+Average number of backtracks per puzzle: 4.0
+
+
+Consistency Check: ArcConsistency
+ValueSelectionHeuristic: None
+VariableSelectionHeuristic: MinimumRemainingValue
+Naked Pair: false
+Naked Triple: false
+PE1.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 1 Solved
+PE2.txt Time taken:16 ms Number of assignments: 36 Number of backtracks: 32 Solved
+PE3.txt Time taken:4 ms Number of assignments: 8 Number of backtracks: 4 Solved
+PE4.txt Time taken:2 ms Number of assignments: 5 Number of backtracks: 4 Solved
+PE5.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 1 Solved
+Average Solution Results: 
+Average runtime: 4.8 ms
+Average number of assignments per puzzle: 10.6
+Average number of backtracks per puzzle: 8.4
+
+
+Consistency Check: ArcConsistency
+ValueSelectionHeuristic: LeastConstrainingValue
+VariableSelectionHeuristic: None
+Naked Pair: true
+Naked Triple: true
+PE1.txt Time taken:1 ms Number of assignments: 4 Number of backtracks: 3 Solved
+PE2.txt Time taken:7 ms Number of assignments: 6 Number of backtracks: 4 Solved
+PE3.txt Time taken:12 ms Number of assignments: 12 Number of backtracks: 9 Solved
+PE4.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
+PE5.txt Time taken:2 ms Number of assignments: 5 Number of backtracks: 4 Solved
+Average Solution Results: 
+Average runtime: 4.8 ms
+Average number of assignments per puzzle: 5.8
+Average number of backtracks per puzzle: 4.0
+
+
+Consistency Check: ArcConsistency
+ValueSelectionHeuristic: LeastConstrainingValue
+VariableSelectionHeuristic: None
+Naked Pair: true
+Naked Triple: false
+PE1.txt Time taken:4 ms Number of assignments: 4 Number of backtracks: 3 Solved
+PE2.txtFailed to find a solution
+PE3.txt Time taken:30 ms Number of assignments: 19 Number of backtracks: 13 Solved
+PE4.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
+PE5.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 4 Solved
+Average Solution Results: 
+Average runtime: 7.8 ms
+Average number of assignments per puzzle: 6.0
+Average number of backtracks per puzzle: 4.0
+
+
+Consistency Check: ArcConsistency
+ValueSelectionHeuristic: LeastConstrainingValue
+VariableSelectionHeuristic: None
+Naked Pair: false
+Naked Triple: true
+PE1.txt Time taken:4 ms Number of assignments: 4 Number of backtracks: 3 Solved
+PE2.txt Time taken:4 ms Number of assignments: 6 Number of backtracks: 4 Solved
+PE3.txt Time taken:10 ms Number of assignments: 16 Number of backtracks: 12 Solved
+PE4.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
+PE5.txt Time taken:4 ms Number of assignments: 5 Number of backtracks: 4 Solved
+Average Solution Results: 
+Average runtime: 4.8 ms
+Average number of assignments per puzzle: 6.6
+Average number of backtracks per puzzle: 4.6
+
+
+Consistency Check: ArcConsistency
+ValueSelectionHeuristic: LeastConstrainingValue
+VariableSelectionHeuristic: None
+Naked Pair: false
+Naked Triple: false
+PE1.txt Time taken:2 ms Number of assignments: 4 Number of backtracks: 3 Solved
+PE2.txt Time taken:5 ms Number of assignments: 8 Number of backtracks: 6 Solved
+PE3.txt Time taken:16 ms Number of assignments: 31 Number of backtracks: 25 Solved
+PE4.txt Time taken:10 ms Number of assignments: 15 Number of backtracks: 6 Solved
+PE5.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 4 Solved
+Average Solution Results: 
+Average runtime: 7.2 ms
+Average number of assignments per puzzle: 12.6
+Average number of backtracks per puzzle: 8.8
 
 
 Consistency Check: ArcConsistency
@@ -714,15 +715,15 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: true
-PE1.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE2.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:4 ms Number of assignments: 5 Number of backtracks: 0 Solved
-PE4.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 1.4 ms
-Average number of assignments per puzzle: 2.0
-Average number of backtracks per puzzle: 0.0
+PE1.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 1 Solved
+PE2.txt Time taken:8 ms Number of assignments: 12 Number of backtracks: 10 Solved
+PE3.txt Time taken:6 ms Number of assignments: 5 Number of backtracks: 2 Solved
+PE4.txt Time taken:4 ms Number of assignments: 5 Number of backtracks: 4 Solved
+PE5.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 1 Solved
+Average Solution Results: 
+Average runtime: 4.2 ms
+Average number of assignments per puzzle: 5.2
+Average number of backtracks per puzzle: 3.6
 
 
 Consistency Check: ArcConsistency
@@ -730,15 +731,15 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: true
 Naked Triple: false
-PE1.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:3 ms Number of assignments: 4 Number of backtracks: 0 Solved
-PE4.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 1.2 ms
-Average number of assignments per puzzle: 1.8
-Average number of backtracks per puzzle: 0.0
+PE1.txt Time taken:3 ms Number of assignments: 2 Number of backtracks: 1 Solved
+PE2.txtFailed to find a solution
+PE3.txt Time taken:5 ms Number of assignments: 5 Number of backtracks: 2 Solved
+PE4.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 4 Solved
+PE5.txt Time taken:6 ms Number of assignments: 2 Number of backtracks: 1 Solved
+Average Solution Results: 
+Average runtime: 3.4 ms
+Average number of assignments per puzzle: 2.8
+Average number of backtracks per puzzle: 1.6
 
 
 Consistency Check: ArcConsistency
@@ -746,15 +747,15 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: false
 Naked Triple: true
-PE1.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:3 ms Number of assignments: 4 Number of backtracks: 0 Solved
-PE4.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 0 Solved
-PE5.txt Time taken:0 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 1.2 ms
-Average number of assignments per puzzle: 1.8
-Average number of backtracks per puzzle: 0.0
+PE1.txt Time taken:1 ms Number of assignments: 2 Number of backtracks: 1 Solved
+PE2.txt Time taken:12 ms Number of assignments: 12 Number of backtracks: 10 Solved
+PE3.txt Time taken:4 ms Number of assignments: 5 Number of backtracks: 1 Solved
+PE4.txt Time taken:5 ms Number of assignments: 5 Number of backtracks: 4 Solved
+PE5.txt Time taken:3 ms Number of assignments: 2 Number of backtracks: 1 Solved
+Average Solution Results: 
+Average runtime: 5.0 ms
+Average number of assignments per puzzle: 5.2
+Average number of backtracks per puzzle: 3.4
 
 
 Consistency Check: ArcConsistency
@@ -762,12 +763,16 @@ ValueSelectionHeuristic: LeastConstrainingValue
 VariableSelectionHeuristic: MinimumRemainingValue
 Naked Pair: false
 Naked Triple: false
-PE1.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE2.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-PE3.txt Time taken:2 ms Number of assignments: 5 Number of backtracks: 0 Solved
-PE4.txt Time taken:2 ms Number of assignments: 3 Number of backtracks: 0 Solved
-PE5.txt Time taken:1 ms Number of assignments: 1 Number of backtracks: 0 Solved
-Solution found for 
-Average runtime: 1.4 ms
-Average number of assignments per puzzle: 2.2
-Average number of backtracks per puzzle: 0.0
+PE1.txt Time taken:2 ms Number of assignments: 2 Number of backtracks: 1 Solved
+PE2.txt Time taken:30 ms Number of assignments: 36 Number of backtracks: 32 Solved
+PE3.txt Time taken:7 ms Number of assignments: 6 Number of backtracks: 2 Solved
+PE4.txt Time taken:3 ms Number of assignments: 5 Number of backtracks: 4 Solved
+PE5.txt Time taken:3 ms Number of assignments: 2 Number of backtracks: 1 Solved
+Average Solution Results: 
+Average runtime: 9.0 ms
+Average number of assignments per puzzle: 10.2
+Average number of backtracks per puzzle: 8.0
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Difficulty: Medium
+
