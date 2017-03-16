@@ -103,12 +103,11 @@ public class BTSolver implements Runnable{
 
 	public void printSolverStats()
 	{
-		System.out.println("HELLO");
-		System.out.println("Time taken:" + (endTime-startTime) + " ms");
-		System.out.println("Number of assignments: " + numAssignments);
-		System.out.println("Number of backtracks: " + numBacktracks);
+		System.out.print(" Time taken:" + (endTime-startTime) + " ms");
+		System.out.print(" Number of assignments: " + numAssignments);
+		System.out.print(" Number of backtracks: " + numBacktracks + " Solved\n");
 	}
-
+	
 	/**
 	 * 
 	 * @return time required for the solver to attain in seconds
@@ -151,6 +150,7 @@ public class BTSolver implements Runnable{
 		case ForwardChecking: 	isConsistent = forwardChecking();
 		break;
 		case ArcConsistency: 	isConsistent = arcConsistency();
+		isConsistent = assignmentsCheck();
 		break;
 		case NakedPair:			isConsistent = nakedPair();	
 		break;
@@ -205,7 +205,7 @@ public class BTSolver implements Runnable{
 	/**
 	 * TODO: Implement Maintaining Arc Consistency.
 	 */
-	private boolean revise(Variable vi, Variable vj)
+	/*private boolean revise(Variable vi, Variable vj)
 	{
 		boolean revised = false;
 		if (vj.isAssigned()){
@@ -218,7 +218,7 @@ public class BTSolver implements Runnable{
 		return revised;
 	}
 	
-	private boolean arcConsistency()
+	private boolean arcConsistency1()
 	{
 		Queue<Pair<Variable,Variable>> Arcs = new LinkedList<Pair<Variable,Variable>>(); 
 		for (Variable v: network.getVariables()){
@@ -234,14 +234,13 @@ public class BTSolver implements Runnable{
 				if (revise(vi,vj)){
 					if(vi.getDomain().isEmpty())
 						return false;
-					if (vi.isAssigned()){
-						for(Variable vk : network.getNeighborsOfVariable(vi)){
-							if(vk != vj){
-								if(!vk.isAssigned())
-									Arcs.add(new Pair<>(vk,vi));
-								}
+					for(Variable vk : network.getNeighborsOfVariable(vi)){
+						if(vk != vj){
+							if(!vk.isAssigned())
+								Arcs.add(new Pair<>(vk,vi));
 							}
-					}
+						}
+					
 					
 					}
 			}
@@ -250,42 +249,64 @@ public class BTSolver implements Runnable{
 			}
 					
 		return true;
-	}
-	/*if (revise(vi, vj)){
-	if(vi.getDomain().isEmpty()){
-		return false;
-	}
-	for(Variable vk : network.getNeighborsOfVariable(vi)){
-		if(vk != vj){
-			if(!vk.isAssigned())
-				Arcs.add(new Pair<>(vk,vi));
+	}*/
+	
+	private boolean arcConsistency(){
+		Queue<Variable> arcs = new LinkedList<Variable>();
+		for(Variable v: network.getVariables()){
+			arcs.add(v);
 		}
-	}
-}*/
-		/*for (Variable v: network.getVariables()){
-			if (v.isAssigned()){
-				System.out.println(v.getName() + " " + v.getAssignment());
-				varWithDomain1.add(v);
-			}
-		}
-		while(!varWithDomain1.isEmpty()){
-			Variable var = varWithDomain1.remove();
-			for (Variable varOther: network.getNeighborsOfVariable(var)){
-				if (!varOther.isAssigned()){
-					//System.out.println("inside the loop");
-					varOther.removeValueFromDomain(var.getAssignment());
-					if(varOther.isAssigned()){
-						varWithDomain1.add(varOther);
+		while(!arcs.isEmpty()){
+			Variable var = arcs.remove();
+			for (Constraint c: network.getConstraintsContainingVariable(var)){
+				if (c.propagateConstraint()){
+					if(network.getModifiedConstraints().contains(var)){
+						if (var.getDomain().isEmpty())
+							return false;
+						arcs.add(var);
+						
 					}
 				}
-				if (varOther.getDomain().isEmpty()){
-					return false;
-				}			
 			}
-		
 		}
-		return true;*/
-	//}
+		
+		return true;
+	}
+	/*private boolean arcConsistency2()
+	{
+		Queue<Pair<Variable,Variable>> Arcs = new LinkedList<Pair<Variable,Variable>>(); 
+		for (Variable v: network.getVariables()){
+			for (Variable vOther : network.getNeighborsOfVariable(v)){
+				Arcs.add(new Pair<>(v,vOther));
+			}
+		}
+		while(!Arcs.isEmpty()){
+			Pair<Variable,Variable> p = Arcs.remove();
+			Variable vi = p.getKey();
+			Variable vj = p.getValue();
+			if (vj.isAssigned()){
+				if (vi.getDomain().contains(vj.getAssignment())){
+					vi.removeValueFromDomain(vj.getAssignment());
+					if(vi.getDomain().isEmpty())
+						return false;
+					if(vi.getDomain().size() ==1){
+						for(Variable vk : network.getNeighborsOfVariable(vi)){
+							if(vk != vj){
+								if(!vk.isAssigned())
+									Arcs.add(new Pair<>(vk,vi));
+							}
+						}
+					}
+					
+				}
+				
+					
+			}
+					
+		}
+		return true;
+	}*/
+	
 	/**
 	 * Naked Pairs algorithm
 	 *		we'll want to do this with at least forward checking, as there aren't any pairs with assignmentsCheck
