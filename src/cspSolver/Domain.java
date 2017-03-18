@@ -102,24 +102,18 @@ public class Domain implements Iterable<Integer>{
 		int three = d.getValues().get(2);
 		int numDups = 0;
 		if(values.contains(one)){
-			//System.out.println("FOUND ONE");
 			numDups++;
 		}
 		if(values.contains(two)){
-			//System.out.println("FOUND NUMBER TWO");
 			numDups++;
 		}
 		if(values.contains(three)){
-			//System.out.println("FOUND THIRD");
 			numDups++;
 		}
-		//System.out.println("IN COMMON: " + numDups);
 		if(numDups == 3){
-			//System.out.println("SAME DOMAIN");
 			return true;
 		}
 		if(numDups == 2 && values.size() == 2){
-			//System.out.println("here's just two");
 			return true;
 		}
 		return false;

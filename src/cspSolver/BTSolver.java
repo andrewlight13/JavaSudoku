@@ -36,7 +36,7 @@ public class BTSolver implements Runnable{
 	public boolean startWithArc = false;
 	public enum VariableSelectionHeuristic 	{ None, MinimumRemainingValue, Degree, MRVTieBreak };
 	public enum ValueSelectionHeuristic 		{ None, LeastConstrainingValue };
-	public enum ConsistencyCheck				{ None, ForwardChecking, ArcConsistency, NakedPair, NakedTriple };
+	public enum ConsistencyCheck				{ None, ForwardChecking, ArcConsistency};
 	
 	private VariableSelectionHeuristic varHeuristics;
 	private ValueSelectionHeuristic valHeuristics;
@@ -151,8 +151,6 @@ public class BTSolver implements Runnable{
 		break;
 		case ArcConsistency: 	isConsistent = arcConsistency();
 		isConsistent = assignmentsCheck();
-		break;
-		case NakedPair:			isConsistent = nakedPair();	
 		break;
 		default: 				isConsistent = assignmentsCheck();
 		break;
@@ -312,8 +310,6 @@ public class BTSolver implements Runnable{
 	 * @return true if culling naked pairs doesn't result in inconsistencies, false if graph becomes inconsistent
 	 */
 	private boolean nakedPair(){
-		//System.out.println("NAKED PAIRS");
-		//if(forwardChecking() == false) return false;
 		ArrayList<Variable> checkedVars = new ArrayList<Variable>();	//list of tuples that have already been checked in this consistency check
 		for(Variable v: network.getVariables()) {
 			if(!v.isAssigned() && !checkedVars.contains(v) && v.getDomain().size() == 2) {														//if you've found an unassigned and unchecked pair
@@ -345,15 +341,12 @@ public class BTSolver implements Runnable{
 		return true;
 	}
 	/**
-	 * TODO: Implement Naked Triples
 	 * @return true if culling naked triples doesn't result in inconsistencies, false if graph becomes inconsistent
 	 */
 	private boolean nakedTriple(){
-		//System.out.println("NAKED TRIPLES");
 		ArrayList<Variable> checkedVars = new ArrayList<Variable>();	//list of tuples that have already been checked in this consistency check
 		for(Variable v: network.getVariables()) {
 			if(!v.isAssigned() && !checkedVars.contains(v) && v.getDomain().size() == 3) {
-				//System.out.println("FOUND FIRST" + v.getDomain().getValues());
 				int one = v.getDomain().getValues().get(0);
 				int two = v.getDomain().getValues().get(1);
 				int three = v.getDomain().getValues().get(2);
@@ -365,17 +358,12 @@ public class BTSolver implements Runnable{
 								if(c==d){
 									for(Variable third: c.vars){
 										if(!third.isAssigned() && !checkedVars.contains(third) && third != second && third != v && third.getDomain().size() <= 3 && third.getDomain().subset(v.getDomain())){
-											//checkedVars.add(v);
-											//checkedVars.add(second);
 											checkedVars.add(third);
-											//System.out.println("NOW COMPARING: " + v.getDomain().getValues() + " and " + second.getDomain().getValues() + " plus " + third.getDomain().getValues());
 											for(Variable checker : c.vars){
 												if(!checker.equals(v) && !checker.equals(second) && !checker.equals(third)){
-													//System.out.println("culling from: " + checker.getDomain().getValues());
 													checker.getDomain().remove(one);
 													checker.getDomain().remove(two);
 													checker.getDomain().remove(three);
-													//System.out.println("culled: " + checker.getDomain().getValues());
 													if(checker.getDomain().isEmpty()){
 														return false;
 													}
@@ -439,32 +427,27 @@ public class BTSolver implements Runnable{
 	 */
 	private Variable getMRV(boolean tiebreak)
 	{
-		//boolean print = false;
-		int minVals = 999999; //arbitrary
+		int minVals = 999999; //arbitrary, just needs to be a high number
 		Variable currentReturn = null;
 		for(Variable v: network.getVariables()){
 			if(!v.isAssigned()){
 				if(v.getDomain().isEmpty()){	//if any variable has no valid assignments, immediately return null, nothing can be valid here 
-					//System.out.println("NULL RETURNED");
 					return null;
 				}
 				if(v.getDomain().size() <= minVals && v.getDomain().size() > 1){	//second part of this if probably unnecessary, but let's just keep it safe
 					if(tiebreak && v.getDomain().size() == minVals){				//tiebreaker clause using degree 
 						if(getDegree(v) > getDegree(currentReturn)){
-							//currentReturn = v;
-							//minVals = v.getDomain().size();
+
 							System.out.println("tiebreaker, value unchanged");
 						}
 					}
 					else{
 						currentReturn = v;
 						minVals = v.getDomain().size();
-						//print = true;
 					}
 				}
 			}
 		}
-		//if(print) System.out.println("NOW RETURNING" + currentReturn.getName() + " domainsize: " + currentReturn.getDomain().size());
 		return currentReturn;
 	}
 	private int getDegree(Variable v){	//same thing as degree heuristic below, but gets the degree of a specific variable
@@ -474,7 +457,6 @@ public class BTSolver implements Runnable{
 				constraints++;
 			}
 		}
-		//System.out.println("SOLVING WITH: " + constraints);
 		return constraints;
 	}
 	
@@ -482,7 +464,7 @@ public class BTSolver implements Runnable{
 	 * TODO: Implement Degree heuristic
 	 * @return variable constrained by the most unassigned variables, null if all variables are assigned.
 	 */
-	private Variable getDegree()  //TODO: implement "inverse degree" heuristic, selecting the variable with the *lowest* degree is more helpful for sudoku
+	private Variable getDegree()
 	{
 		int constraints = 0, maxConstraints = -1;
 		Variable returnValue = null;
@@ -500,7 +482,6 @@ public class BTSolver implements Runnable{
 				}
 			}
 		}
-		//System.out.println("NOW RETURNING" + returnValue.getName() + " constraints: " + maxConstraints);
 		return returnValue;
 	}
 	
