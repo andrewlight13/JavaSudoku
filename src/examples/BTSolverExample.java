@@ -27,7 +27,11 @@ public class BTSolverExample {
 		
 		ConsistencyCheck[] consistencyChecks = {ConsistencyCheck.ArcConsistency, ConsistencyCheck.ForwardChecking, ConsistencyCheck.None};
 		ValueSelectionHeuristic[] ValueSelection = {ValueSelectionHeuristic.LeastConstrainingValue, ValueSelectionHeuristic.None};
-		VariableSelectionHeuristic[] VariableSelection = {VariableSelectionHeuristic.MinimumRemainingValue, VariableSelectionHeuristic.Degree, VariableSelectionHeuristic.None};
+
+		//uncomment this next line to run degree, it's really slow though
+		//VariableSelectionHeuristic[] VariableSelection = {VariableSelectionHeuristic.MinimumRemainingValue, VariableSelectionHeuristic.Degree, VariableSelectionHeuristic.None};
+		
+		VariableSelectionHeuristic[] VariableSelection = {VariableSelectionHeuristic.MinimumRemainingValue, VariableSelectionHeuristic.None};
 		boolean[] Nakedp = {true, false};
 		boolean[] Nakedt = {true, false};
 		for(int c=0; c < consistencyChecks.length; ++c) {
