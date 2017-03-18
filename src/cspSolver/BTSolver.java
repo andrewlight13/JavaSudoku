@@ -203,51 +203,7 @@ public class BTSolver implements Runnable{
 	/**
 	 * TODO: Implement Maintaining Arc Consistency.
 	 */
-	/*private boolean revise(Variable vi, Variable vj)
-	{
-		boolean revised = false;
-		if (vj.isAssigned()){
-			Integer vjValue = vj.getAssignment();
-			if (vi.getDomain().contains(vjValue))
-				vi.removeValueFromDomain(vjValue);
-				revised = true;
-		}
-		
-		return revised;
-	}
 	
-	private boolean arcConsistency1()
-	{
-		Queue<Pair<Variable,Variable>> Arcs = new LinkedList<Pair<Variable,Variable>>(); 
-		for (Variable v: network.getVariables()){
-			for (Variable vOther : network.getNeighborsOfVariable(v)){
-				Arcs.add(new Pair<>(v,vOther));
-			}
-		}
-		while(!Arcs.isEmpty()){
-			Pair<Variable,Variable> p = Arcs.remove();
-			Variable vi = p.getKey();
-			Variable vj = p.getValue();
-			if (!vi.isAssigned()){
-				if (revise(vi,vj)){
-					if(vi.getDomain().isEmpty())
-						return false;
-					for(Variable vk : network.getNeighborsOfVariable(vi)){
-						if(vk != vj){
-							if(!vk.isAssigned())
-								Arcs.add(new Pair<>(vk,vi));
-							}
-						}
-					
-					
-					}
-			}
-			
-					
-			}
-					
-		return true;
-	}*/
 	
 	private boolean arcConsistency(){
 		Queue<Variable> arcs = new LinkedList<Variable>();
@@ -269,40 +225,7 @@ public class BTSolver implements Runnable{
 		
 		return true;
 	}
-	/*private boolean arcConsistency2()
-	{
-		Queue<Pair<Variable,Variable>> Arcs = new LinkedList<Pair<Variable,Variable>>(); 
-		for (Variable v: network.getVariables()){
-			for (Variable vOther : network.getNeighborsOfVariable(v)){
-				Arcs.add(new Pair<>(v,vOther));
-			}
-		}
-		while(!Arcs.isEmpty()){
-			Pair<Variable,Variable> p = Arcs.remove();
-			Variable vi = p.getKey();
-			Variable vj = p.getValue();
-			if (vj.isAssigned()){
-				if (vi.getDomain().contains(vj.getAssignment())){
-					vi.removeValueFromDomain(vj.getAssignment());
-					if(vi.getDomain().isEmpty())
-						return false;
-					if(vi.getDomain().size() ==1){
-						for(Variable vk : network.getNeighborsOfVariable(vi)){
-							if(vk != vj){
-								if(!vk.isAssigned())
-									Arcs.add(new Pair<>(vk,vi));
-							}
-						}
-					}
-					
-				}
-				
-					
-			}
-					
-		}
-		return true;
-	}*/
+	
 	
 	/**
 	 * Naked Pairs algorithm
