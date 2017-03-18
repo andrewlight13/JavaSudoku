@@ -375,9 +375,7 @@ public class BTSolver implements Runnable{
 							}
 						}
 					}
-					//checkedVars.add(second);
-				}
-				//checkedVars.add(v);	
+				}	
 			}
 		}
 		return true;
