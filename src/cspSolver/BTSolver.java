@@ -356,7 +356,7 @@ public class BTSolver implements Runnable{
 					return null;
 				}
 				if(v.getDomain().size() <= minVals && v.getDomain().size() > 1){	//second part of this if probably unnecessary, but let's just keep it safe
-					if(tiebreak && v.getDomain().size() == minVals){				//tiebreaker clause using degree 
+					if(tiebreak && v.getDomain().size() == minVals){				//tiebreaker clause using degree, not sure if we're supposed to use this to be honest?
 						if(getDegree(v) > getDegree(currentReturn)){
 
 							System.out.println("tiebreaker, value unchanged");

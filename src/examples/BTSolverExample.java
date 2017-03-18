@@ -23,11 +23,11 @@ public class BTSolverExample {
 		String[] sudokuInputFilestoprint = {"PH1.txt","PH2.txt","PH3.txt","PH4.txt","PH5.txt"};
 		String[] sudokuInputFiles2 = {"ExampleSudokuFiles/PH1.txt","ExampleSudokuFiles/PH2.txt","ExampleSudokuFiles/PH3.txt","ExampleSudokuFiles/PH4.txt","ExampleSudokuFiles/PH5.txt"}; //"ExampleSudokuFiles/PM1.txt","ExampleSudokuFiles/PM2.txt","ExampleSudokuFiles/PM3.txt","ExampleSudokuFiles/PM4.txt","ExampleSudokuFiles/PM5.txt",
 		String[] sudokuInputFilestoprint2 = {"PH1.txt","PH2.txt","PH3.txt","PH4.txt","PH5.txt"}; 
-		boolean setArc = true;						// set this if you want to preprocess the problem using arc consistency
+		boolean setArc = false;						// set this if you want to preprocess the problem using arc consistency
 		
 		ConsistencyCheck[] consistencyChecks = {ConsistencyCheck.ArcConsistency, ConsistencyCheck.ForwardChecking, ConsistencyCheck.None};
 		ValueSelectionHeuristic[] ValueSelection = {ValueSelectionHeuristic.LeastConstrainingValue, ValueSelectionHeuristic.None};
-		VariableSelectionHeuristic[] VariableSelection = {VariableSelectionHeuristic.MinimumRemainingValue, VariableSelectionHeuristic.None};
+		VariableSelectionHeuristic[] VariableSelection = {VariableSelectionHeuristic.MinimumRemainingValue, VariableSelectionHeuristic.Degree, VariableSelectionHeuristic.None};
 		boolean[] Nakedp = {true, false};
 		boolean[] Nakedt = {true, false};
 		for(int c=0; c < consistencyChecks.length; ++c) {
