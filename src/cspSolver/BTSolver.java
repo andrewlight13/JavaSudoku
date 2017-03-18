@@ -33,7 +33,7 @@ public class BTSolver implements Runnable{
 	private int numBacktracks;
 	private long startTime;
 	private long endTime;
-	
+	public boolean startWithArc = false;
 	public enum VariableSelectionHeuristic 	{ None, MinimumRemainingValue, Degree, MRVTieBreak };
 	public enum ValueSelectionHeuristic 		{ None, LeastConstrainingValue };
 	public enum ConsistencyCheck				{ None, ForwardChecking, ArcConsistency, NakedPair, NakedTriple };
@@ -264,7 +264,6 @@ public class BTSolver implements Runnable{
 						if (var.getDomain().isEmpty())
 							return false;
 						arcs.add(var);
-						
 					}
 				}
 			}
@@ -614,6 +613,9 @@ public class BTSolver implements Runnable{
 	{
 		startTime = System.currentTimeMillis();
 		try {
+			boolean b = true;
+			if(startWithArc) b = arcConsistency(); 
+			if(!b) return;
 			solve(0);
 		}catch (VariableSelectionException e)
 		{
